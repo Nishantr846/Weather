@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2f8;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.weather_container {
+    text-align: center;
+    color: #070261;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.temp p {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.time_location p {
+    font-size: 1.5rem;
+}
+
+nav {
+    width: 90%;
+    text-align: center;
+}
+
+.search_area {
+    width: 70%;
+    padding: 0.7rem;
+    border: 1px solid #070261;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+nav form button {
+    padding: 0.7rem 1.5rem;
+    background-color: #070261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav form button:hover {
+    background-color: #1a1a8c;
+}
