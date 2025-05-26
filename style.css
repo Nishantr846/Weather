@@ -65,3 +65,61 @@ nav form button {
 nav form button:hover {
     background-color: #1a1a8c;
 }
+
+/* Styles for 7-Day Forecast Section */
+.forecast_container {
+    background-color: rgba(255, 255, 255, 0.8); /* Similar to weather_container */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Similar to weather_container */
+    color: #070261; /* Similar to weather_container */
+    margin-bottom: 2rem;
+    width: 70%; /* As per requirement */
+    max-width: 500px; /* As per requirement */
+    /* Centering is handled by the parent .container's flex properties */
+}
+
+.forecast_container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem; /* Slightly larger for emphasis */
+}
+
+#forecast_days_container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around; /* Distribute space between day cards */
+    gap: 0.5rem; /* Gap between day cards */
+}
+
+.forecast-day {
+    background-color: rgba(0, 0, 0, 0.05); /* Slight background to distinguish cards */
+    padding: 0.75rem 0.5rem; /* Adjusted padding */
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100px; /* Flex properties for responsiveness */
+    min-width: 80px; /* Minimum width for each card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+}
+
+.forecast-day p {
+    margin-bottom: 0.3rem; /* Consistent margin for all p tags in forecast-day */
+}
+
+.forecast-day .forecast-day-name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.4rem; /* More space below day name */
+}
+
+.forecast-day .forecast-condition {
+    font-size: 0.85rem;
+    color: #333; /* Slightly different color for condition code */
+}
+
+.forecast-day .forecast-temp {
+    font-size: 0.9rem;
+}
